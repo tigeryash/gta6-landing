@@ -1,1 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import "tailwindcss";
+
+body {
+  @apply bg-[#111117] overflow-x-hidden text-white;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  @apply w-full h-full object-cover;
+}
+
+h1 {
+  @apply text-[2.5rem] md:text-[10rem] uppercase font-bold leading-[.8] 
+  tracking-[0] md:tracking-[-.2rem];
+}
+
+p {
+  @apply text-[1rem] md:text-[1.25rem] uppercase font-normal leading-[.8];
+}
+
+section {
+  @apply h-[100svh] bg-[#111117] relative w-[100vw] text-center overflow-hidden;
+}
+
+#hero-img-container,
+#hero-img-container img,
+#fade-overlay {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+#hero-img-logo img {
+  @apply absolute top-[5%] left-1/2 w-[400px] h-auto object-contain;
+  transform: translate(-50%, 0);
+}
+
+#overlay-copy h1 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transform-origin: center 0%;
+}
